@@ -16,5 +16,7 @@ RUN a2enmod headers
 
 WORKDIR /app
 
-COPY run_apache.sh run_apache.sh
-RUN chmod +x run_apache.sh
+COPY init.sh init.sh
+RUN chmod +x init.sh
+
+CMD ["/app/init.sh"]
