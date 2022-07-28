@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM debian:buster
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt-get install -y apache2 apache2-utils \
